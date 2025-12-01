@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 import toast from 'react-hot-toast';
-import MainSpinner from './MainSpinner';
 
 
 const Navbar = () => {
@@ -26,7 +25,7 @@ const Navbar = () => {
                     {
                         user ? <div className="absolute text-nowrap top-0 -right-[135px] mt-2 hidden group-hover:block  text-sm p-2 rounded ">
                             {user.displayName || "Anonymous User"}
-                        </div> : <div className="absolute top-0 -right-[80px] mt-2  hidden group-hover:block  text-sm p-2 rounded ">
+                        </div> : <div className="absolute top-0 -right-20 mt-2  hidden group-hover:block  text-sm p-2 rounded ">
                             {"No User"}
                         </div>
                     }
