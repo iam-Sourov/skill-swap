@@ -1,0 +1,80 @@
+[
+    {
+        "skillId": 1,
+        "skillName": "Beginner Guitar Lessons",
+        "providerName": "Alex Martin",
+        "providerEmail": "alex@skillswap.com",
+        "providerImage": "https://i.postimg.cc/k4tz2Hq6/alex.jpg",
+        "price": 20,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Learn basic guitar chords, strumming patterns, and easy songs for complete beginners.",
+        "image": "https://i.postimg.cc/dV0XXPCs/Guitar-Obsession.jpg",
+        "category": "Music"
+    },
+    {
+        "skillId": 2,
+        "skillName": "Spoken English Practice",
+        "providerName": "Sara Hossain",
+        "providerEmail": "sara@skillswap.com",
+       "providerImage": "https://i.postimg.cc/D0kDLcwc/girl.jpg",
+        "price": 10,
+        "rating": 4.6,
+        "slotsAvailable": 5,
+        "description": "Interactive English speaking sessions to improve fluency and confidence in daily conversations.",
+        "image": "https://i.postimg.cc/FHKqq5S9/English-Spoken.jpg",
+        "category": "Language"
+    },
+    {
+        "skillId": 3,
+        "skillName": "Frontend Web Development",
+        "providerName": "Rahul Singh",
+        "providerEmail": "rahul@skillswap.com",
+        "providerImage": "https://i.postimg.cc/7h8c0NZg/rahul.jpg",
+        "price": 45,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Learn HTML, CSS, and JavaScript from scratch to build modern, responsive websites.",
+        "image": "https://i.postimg.cc/6pQSSJZw/MERN.jpg",
+        "category": "Programming"
+    },
+    {
+        "skillId": 4,
+        "skillName": "Graphic Design Masterclass",
+        "providerName": "Maya Lopez",
+        "providerEmail": "maya@skillswap.com",
+        "providerImage": "https://i.postimg.cc/zvZMKkGK/Maya-Lopez.jpg",
+        "price": 30,
+        "rating": 4.7,
+        "slotsAvailable": 2,
+        "description": "Comprehensive design course covering Adobe Photoshop, Illustrator, and visual composition.",
+        "image": "https://i.postimg.cc/pLd77bjp/graphic-Design.jpg",
+        "category": "Design"
+    },
+    {
+        "skillId": 5,
+        "skillName": "Digital Marketing Essentials",
+        "providerName": "Kamrul Hasan",
+        "providerEmail": "kamrul@skillswap.com",
+        "providerImage": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&fit=crop",
+        "price": 25,
+        "rating": 4.5,
+        "slotsAvailable": 6,
+        "description": "Learn SEO, social media strategy, and content marketing to grow any online business.",
+        "image": "https://i.postimg.cc/4NPqBNYn/Digital-Marketing.jpg",
+        "category": "Marketing"
+    },
+    {
+        "skillId": 6,
+        "skillName": "Basic Photography Course",
+        "providerName": "Linda Park",
+        "providerEmail": "linda@skillswap.com",
+        "providerImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+        "price": 18,
+        "rating": 4.4,
+        "slotsAvailable": 3,
+        "description": "Master your camera settings, lighting techniques, and photo composition for beginners.",
+        "image": "https://i.postimg.cc/52tGGdzF/Photography.jpg",
+        "category": "Art"
+    }
+]

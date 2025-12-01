@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root {
+    --glass: rgba(255, 255, 255, 0.06);
+}
+
+body {
+    @apply bg-slate-900 text-slate-100 min-h-screen;
+
+
+}
+
+
+.font {
+    font-family: "Nunito Sans"
+}
+
+.card {
+    @apply bg-[#ffffff0a] backdrop-blur-lg rounded-2xl border border-white/10;
+}
+
+.btn {
+    @apply shadow-none;
+}
