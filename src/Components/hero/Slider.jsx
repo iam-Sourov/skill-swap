@@ -21,7 +21,7 @@ const Slider = ({ skills }) => {
                     </p>
                 </div>
             )}
-            <div className="relative shadow-2xl rounded-2xl overflow-hidden">
+            <div className="relative shadow-2xl rounded-2xl overflow-hidden mt-12">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
