@@ -22,7 +22,7 @@ const {loading } =useContext(AuthContext);
 
 
     return (
-        <div className=" pt-20">
+        <div className="pt-16">
             <Slider skills={skills}></Slider>
             <PopularSkills skills={skills}></PopularSkills>
             <TopProviders topProvider={topProvider}></TopProviders>

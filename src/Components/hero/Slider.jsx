@@ -9,9 +9,8 @@ import { AuthContext } from '../../Context/AuthContext';
 
 const Slider = ({ skills }) => {
     const { user } = useContext(AuthContext)
-
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 py-8">
+        <section className="w-full max-w-7xl mx-auto px-4 py-4">
             {user && (
                 <div className="text-center mb-4 space-y-2">
                     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800 dark:text-white tracking-tight">

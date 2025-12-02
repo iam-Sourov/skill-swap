@@ -17,11 +17,11 @@ const Navbar = () => {
                 toast.error(error);
             })
     }
-    console.log(user);
 
     return (
-        <nav className="navbar px-6 md:px-18 text-white fixed top-0  backdrop-blur-md shadow-sm  flex justify-between items-center z-50">
-            <div className='relative group'>
+
+        <div className="navbar px-6 md:px-18 text-white fixed top-1 bg-neutral/50 backdrop-blur-lg shadow-sm  flex justify-between items-center z-50 ">
+            <div className="flex relative group">
                 <div className='rounded-full w-12 h-12'>
                     {
                         user ? <img
@@ -36,34 +36,52 @@ const Navbar = () => {
                         />
                     }
                     {
-                        user ? <div className="absolute text-nowrap top-0 -right-[145px] mt-2 hidden group-hover:block  text-sm p-2 rounded ">
+                        user ? <div className="absolute text-nowrap top-0 -right-38 mt-2 hidden group-hover:block  text-sm p-2 rounded ">
                             {user.displayName || "Anonymous User"}
-                        </div> : <div className="absolute top-0 -right-35 mt-2  hidden group-hover:block  text-sm p-2 rounded ">
+                        </div> : <div className="absolute top-0 -right-38 mt-2 hidden group-hover:block  text-sm p-2 rounded ">
                             {"No User is logged in"}
                         </div>
                     }
                 </div>
             </div>
-            <div className=" flex justify-between items-center gap-2 ">
-                <NavLink to={'/'} className=" md:p-2 hover:text-blue-600">Home</NavLink>
-                <NavLink to={'skills'} className=" md:p-2 hover:text-blue-600">All Skills</NavLink>
+            <div className="flex-none">
+                <ul className=" hidden lg:flex  justify-between items-center gap-2 menu menu-horizontal px-6">
+                    <NavLink to={'/'} className=" md:p-2 hover:text-blue-600">Home</NavLink>
+                    <NavLink to={'skills'} className=" md:p-2 hover:text-blue-600">All Skills</NavLink>
+                    {
+                        user && <NavLink to={'/profile'} className="md:p-2 hover:text-blue-600">My Profile</NavLink>
+                    }
+                    <a className='md:p-2 hover:text-blue-600' href="#howItWork">About Us</a>
+                    <a className='md:p-2 hover:text-blue-600' href="#footer">Contact Us</a>
 
-                {
-                    user && <NavLink to={'/profile'} className="md:p-2 hover:text-blue-600">My Profile</NavLink>
-                }
-                <a className='md:p-2 hover:text-blue-600' href="#howItWork">About Us</a>
-                <a className='md:p-2 hover:text-blue-600' href="#footer">Contact Us</a>
+                </ul>
             </div>
-            <div className=' flex space-x-2'>
+            <div className=' flex justify-center items-center space-x-2'>
                 {
                     user ? <button onClick={handleLogOut} className='btn btn-outline  hover:bg-blue-600 hover:border-none text-white border-white'>Log Out</button> : <Link to={'/auth/login'} className='btn btn-outline  hover:bg-blue-600 text-white border-white'>Log In</Link>
                 }
                 {
                     user ? '' : <Link to={'/auth/signup'} className='btn btn-secondary'>Sign Up</Link>
                 }
-            </div>
-        </nav>
+                <ul className=' lg:hidden flex justify-between items-center menu menu-horizontal'>
+                    <li>
+                        <details >
+                            <summary className='btn btn-outline'>Menu</summary>
+                            <ul className=" text-black  flex flex-col rounded-t-none px-4 py-2" >
+                                <NavLink to={'/'} className=" hover:text-blue-600">Home</NavLink>
+                                <NavLink to={'skills'} className=" hover:text-blue-600">All Skills</NavLink>
+                                {
+                                    user && <NavLink to={'/profile'} className=" hover:text-blue-600">My Profile</NavLink>
+                                }
+                                <a className=' hover:text-blue-600' href="#howItWork">About Us</a>
+                                <a className=' hover:text-blue-600' href="#footer">Contact Us</a>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
 
+            </div>
+        </div>
     );
 };
 
