@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillCards from './card/SkillCards';
+import { Link } from 'react-router';
 
 const PopularSkills = ({ skills }) => {
     return (
@@ -9,12 +10,11 @@ const PopularSkills = ({ skills }) => {
                 <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
                     {skills.map((skills) => <SkillCards key={skills.skillId} skills={skills}></SkillCards>)}
                 </div>
-
             </div>
             <div className='flex justify-center items-center mt-8'>
-                <button className='btn btn-outline'>
+                <Link to={'/allskills'} className='btn btn-outline'>
                     See More
-                </button>
+                </Link>
             </div>
         </section>
     );

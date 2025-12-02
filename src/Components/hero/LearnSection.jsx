@@ -48,7 +48,7 @@ const LearnSection = () => {
                             <h3 className="text-2xl font-semibold mb-3 text-white group-hover:text-blue-400 transition-colors">
                                 {card.title}
                             </h3>
-                            <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                            <p className="text-gray-400 mb-8 w-[300px] text-sm leading-relaxed">
                                 {card.desc}
                             </p>
                             <button className="text-white font-medium cursor-pointer group-hover:text-blue-400 transition-colors flex items-center gap-2">

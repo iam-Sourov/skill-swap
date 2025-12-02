@@ -1,10 +1,13 @@
 import React from 'react';
-
+import logo from '../../assets/logo.jpg';
 const Footer = () => {
     return (
 
         <footer id='footer' className="footer  flex justify-between items-center bg-neutral/90 text-neutral-content p-12">
             <div className="container mx-auto md:flex justify-between items-center">
+                <div>
+                    <img src={logo} alt="" />
+                </div>
                 <div>
                     <h3 className="text-lg font-semibold text-white mb-3">Contact Info</h3>
                     <ul className="space-y-2 text-sm">

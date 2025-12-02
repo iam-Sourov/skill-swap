@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className=" hidden lg:flex  justify-between items-center gap-2 menu menu-horizontal px-6">
                     <NavLink to={'/'} className=" md:p-2 hover:text-blue-600">Home</NavLink>
-                    <NavLink to={'skills'} className=" md:p-2 hover:text-blue-600">All Skills</NavLink>
+                    <NavLink to={'allskills'} className=" md:p-2 hover:text-blue-600">All Skills</NavLink>
                     {
                         user && <NavLink to={'/profile'} className="md:p-2 hover:text-blue-600">My Profile</NavLink>
                     }
@@ -69,7 +69,7 @@ const Navbar = () => {
                             <summary className='btn btn-outline'>Menu</summary>
                             <ul className=" text-black  flex flex-col rounded-t-none px-4 py-2" >
                                 <NavLink to={'/'} className=" hover:text-blue-600">Home</NavLink>
-                                <NavLink to={'skills'} className=" hover:text-blue-600">All Skills</NavLink>
+                                <NavLink to={'allskills'} className=" hover:text-blue-600">All Skills</NavLink>
                                 {
                                     user && <NavLink to={'/profile'} className=" hover:text-blue-600">My Profile</NavLink>
                                 }

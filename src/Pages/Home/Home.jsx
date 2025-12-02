@@ -14,7 +14,8 @@ const Home = () => {
 const {loading } =useContext(AuthContext);
 
     const skills = useLoaderData();
-    const topProvider = skills.filter(top => top.rating > 4.5);
+    const filteredSkills = skills.slice(0, 8);
+    const topProvider = filteredSkills.filter(top => top.rating > 4.5);
 
     if(loading){
         return <MainSpinner></MainSpinner>
@@ -24,7 +25,7 @@ const {loading } =useContext(AuthContext);
     return (
         <div className="pt-16">
             <Slider skills={skills}></Slider>
-            <PopularSkills skills={skills}></PopularSkills>
+            <PopularSkills skills={filteredSkills}></PopularSkills>
             <TopProviders topProvider={topProvider}></TopProviders>
             <HowItWork></HowItWork>
             <LearnSection></LearnSection>

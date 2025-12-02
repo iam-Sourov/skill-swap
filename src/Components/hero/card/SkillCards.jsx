@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const SkillCards = ({ skills }) => {
+   
+    
+    
     const { skillId, image, skillName, rating, price } = skills;
     return (
         <div
@@ -29,7 +32,7 @@ const SkillCards = ({ skills }) => {
                 <div className="mt-auto">
                     <Link
                         to={`/details/${skillId}`}
-                        className="block w-full text-center py-3 rounded-lg bg-gray-700 text-white font-semibold hover:bg-blue-600 transition-colors duration-300">
+                        className="btn btn-outline block w-full text-center py-3 rounded-md  text-white font-semibold hover:bg-blue-600 transition-colors duration-300">
                         View Details
                     </Link>
                 </div>

@@ -8,6 +8,8 @@ import SignUp from "../Pages/signUp/SignUp";
 import AuthLayout from "../Layouts/AuthLayout/AuthLayout";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import ForgetPassword from "../Pages/forgetPassword/ForgetPassword";
+import AllSkills from "../Pages/allSkills/AllSkills";
+import MainSpinner from "../Components/spinner/MainSpinner";
 
 
 
@@ -15,6 +17,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        hydrateFallbackElement: <MainSpinner></MainSpinner>,
         children: [
             {
                 index: true,
@@ -29,9 +32,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <PrivateRoutes>
-                    <Details></Details>
-                </PrivateRoutes>,
+                element: <Details></Details>,
+                loader: () => fetch('/skills.json'),
+            },
+            {
+                path: '/allskills',
+                element: <AllSkills></AllSkills>,
                 loader: () => fetch('/skills.json'),
             }
         ]
