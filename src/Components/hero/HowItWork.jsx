@@ -2,7 +2,7 @@ import React from 'react';
 
 const HowItWork = () => {
     return (
-        <section className="py-10 ">
+        <section id='howItWork' className="py-10 m-10 ">
             <div data-aos='fade-up' className="max-w-7xl mx-auto px-6 text-center ">
                 <h2 className="text-4xl text-white font-bold mb-12">How It Works</h2>
                 <div className="grid gap-10 md:grid-cols-3">

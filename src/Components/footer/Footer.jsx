@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
 
-        <footer className="footer  flex justify-between items-center bg-neutral/90 text-neutral-content p-8">
+        <footer id='footer' className="footer  flex justify-between items-center bg-neutral/90 text-neutral-content p-8">
             <div className="container mx-auto md:flex justify-between items-center">
                 <div>
                     <h3 className="text-lg font-semibold text-white mb-3">Contact Info</h3>

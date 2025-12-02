@@ -51,8 +51,8 @@ const Navbar = () => {
                 {
                     user && <NavLink to={'/profile'} className="md:p-2 hover:text-blue-600">My Profile</NavLink>
                 }
-                <NavLink to={'/'} className=" md:p-2 hover:text-blue-600">About Us</NavLink>
-                <NavLink to={'/'} className=" md:p-2 hover:text-blue-600">Contact Us</NavLink>
+                <a className='md:p-2 hover:text-blue-600' href="#howItWork">About Us</a>
+                <a className='md:p-2 hover:text-blue-600' href="#footer">Contact Us</a>
             </div>
             <div className=' flex space-x-2'>
                 {

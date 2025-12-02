@@ -4,8 +4,7 @@ const TopProviders = ({ topProvider }) => {
     return (
         <section className="py-12 bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 text-center">
-                {/* Header Section */}
-                <h2 className="text-4xl text-white font-bold mb-12 tracking-wide">
+                <h2 className=" text-4xl  text-white font-bold mb-12 tracking-wide">
                     Top Rated Providers
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-2">
