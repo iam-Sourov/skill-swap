@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../../Context/AuthContext';
+
 
 const Slider = ({ skills }) => {
     const { user } = useContext(AuthContext)
@@ -34,13 +35,13 @@ const Slider = ({ skills }) => {
                             <div
                                 className="w-full h-full bg-cover bg-center relative group"
                                 style={{ backgroundImage: `url(${slider.image})` }}>
-                                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent"></div>
+                                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-transparent"></div>
                                 <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full text-white z-10">
                                     <h2 className="text-2xl md:text-4xl font-bold mb-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                                         {slider.skillName || "Master a New Skill"}
                                     </h2>
                                     <p className="text-gray-200 hidden md:block transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-100">
-                                        Explore top-rated providers for this category.
+                                        Explore category.
                                     </p>
                                 </div>
                             </div>

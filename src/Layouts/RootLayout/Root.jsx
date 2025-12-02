@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
-import Navbar from '../../Components/Navbar';
+import Navbar from '../../Components/navbar/Navbar';
 import { Outlet } from 'react-router';
-import Footer from '../../Components/Footer';
+import Footer from '../../Components/footer/Footer';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import MainSpinner from '../../Components/spinner/MainSpinner';
 import { AuthContext } from '../../Context/AuthContext';
-import MainSpinner from '../../Components/MainSpinner';
 
 
 

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../../Context/AuthContext';
+
 
 const MainSpinner = () => {
     const { loading } = useContext(AuthContext);

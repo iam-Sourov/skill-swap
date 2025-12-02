@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router";
-import Root from "../Layouts/RootLayout/Root.jsx";
-import Home from "../Pages/Home.jsx";
-import Details from "../Pages/Details.jsx";
-import Profile from "../Pages/Profile.jsx";
-import Login from "../Pages/Login.jsx";
-import SignUp from "../Pages/SignUp.jsx";
-import AuthLayout from "../Layouts/AuthLayout/AuthLayout.jsx";
-import PrivateRoutes from "../PrivateRoutes/PrivateRoutes.jsx";
-import ForgetPassword from "../Pages/ForgetPassword.jsx";
+import Root from "../Layouts/RootLayout/Root";
+import Home from "../Pages/home/Home";
+import Details from "../Pages/Details/Details";
+import Profile from "../Pages/myProfile/Profile";
+import Login from "../Pages/login/Login";
+import SignUp from "../Pages/signUp/SignUp";
+import AuthLayout from "../Layouts/AuthLayout/AuthLayout";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import ForgetPassword from "../Pages/forgetPassword/ForgetPassword";
 
 
 

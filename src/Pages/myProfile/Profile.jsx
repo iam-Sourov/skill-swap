@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { AuthContext } from '../Context/AuthContext'
+import { AuthContext } from '../../Context/AuthContext'
 import toast from 'react-hot-toast';
-import Spinner from '../Components/Spinner';
-import { auth } from '../Firebase/firebase.config';
+import Spinner from '../../Components/spinner/Spinner';
+import { auth } from '../../Firebase/firebase.config';
 
 const Profile = () => {
 
